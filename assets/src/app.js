@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+//Vue.prototype.base_url = 'http://localhost/civ/';
+Vue.prototype.base_url = 'http://localhost:8080/civ/';
+
 
 /*import Foo from './hello1.vue';
 import Bar from './hello2.vue';

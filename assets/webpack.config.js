@@ -23,9 +23,9 @@ module.exports = {
     // 这里定义 webpack-dev-server 开启的web服务的根目录
     contentBase: resolve('./'),
     proxy: {
-      '/api': {
+      'http://localhost:8080/civ/api': {
         target: 'http://localhost',
-        pathRewrite: {'^/api' : '/civ/api'}
+        pathRewrite: {'http://localhost/civ/api' : '/civ/api'}
       }
     }
   },

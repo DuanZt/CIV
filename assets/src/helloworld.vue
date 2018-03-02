@@ -19,7 +19,7 @@ export default {
   methods: {
     fetchData () {
         var _this = this;
-        axios.post('/api/json/abc')
+        axios.post(_this.base_url+'api/json/abc')
           .then(function (response) {
             _this.msg = response.data.a;
             console.log(response.data.a);

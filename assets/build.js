@@ -387,6 +387,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _vue2.default.use(_vueRouter2.default);
 
+_vue2.default.prototype.base_url = 'http://localhost/civ/';
+//Vue.prototype.base_url = 'http://localhost:8080/civ/';
+
+
 /*import Foo from './hello1.vue';
 import Bar from './hello2.vue';
 import helloworld from './helloworld.vue';

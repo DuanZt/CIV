@@ -953,10 +953,6 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var base_url = "http://localhost/CIV/"; //
-//
-//
-
 exports.default = {
   name: 'helloworld',
   data: function data() {
@@ -973,7 +969,7 @@ exports.default = {
   methods: {
     fetchData: function fetchData() {
       var _this = this;
-      _axios2.default.post(base_url).then(function (response) {
+      _axios2.default.post(_this.base_url + 'api/json/abc').then(function (response) {
         _this.msg = response.data.a;
         console.log(response.data.a);
         console.log(_this);
@@ -982,7 +978,9 @@ exports.default = {
       });
     }
   }
-};
+}; //
+//
+//
 
 /***/ }),
 /* 18 */
